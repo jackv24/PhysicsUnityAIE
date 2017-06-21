@@ -8,6 +8,11 @@ public class CameraControl : MonoBehaviour
 
     public float smoothing = 0.5f;
 
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
     void Update()
     {
         Vector3 rot = transform.eulerAngles;
