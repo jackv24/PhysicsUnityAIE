@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoftBody : MonoBehaviour
+public class Rope : MonoBehaviour
 {
     public int numLinks = 5;
     public float linkOffset = 1.0f;
