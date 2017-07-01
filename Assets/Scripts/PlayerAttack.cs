@@ -16,7 +16,7 @@ public class PlayerAttack : MonoBehaviour
 
             if(Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, 1000f, raycastLayer))
             {
-                CharacterStats stats = hit.collider.GetComponent<CharacterStats>();
+                CharacterStats stats = hit.collider.GetComponentInParent<CharacterStats>();
 
                 if(stats)
                 {
